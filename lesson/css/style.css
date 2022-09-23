@@ -1,0 +1,72 @@
+body{
+}
+.tablecss {
+	
+	
+	
+}
+.table {
+	margin: 0 auto;
+	border: 1px solid #000;
+	box-shadow: 5px 5px 5px #ccc;
+	
+}
+.tablecaption{
+	color: #000;
+	font-weight: bold;
+	font-size: 25px;
+}
+.colnum {
+	font-weight: bold;
+	text-align: right;
+}
+.element{
+	position: relative;
+	width: 80px;
+	height: 80px;
+	padding: 3px;
+	text-align: left;
+	color: #000;
+}
+.element:hover{
+	background: rgba(255, 250, 190, 0.418);
+}
+.element:hover:after{
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+   border: 3px solid orange;	
+	box-shadow: 5px 5px 5px #ccc;
+	border-radius: 5px;
+}
+.notmet {
+}
+.atomnumber {
+}
+.symbol {
+}
+.name {
+}
+.atomweight {
+}
+.blaggaz {
+}
+.chelmet {
+}
+.chelzemmet {
+}
+.polumet {
+}
+.postperehodmet {
+}
+.perehodmet {
+}
+.unknown {
+}
+.lantan {
+}
+.aktin {
+}
