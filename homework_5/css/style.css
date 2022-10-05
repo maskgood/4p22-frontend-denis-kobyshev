@@ -49,8 +49,6 @@ main {
 	position: relative;
 	margin-top: 120px;
 	flex: 1 0 auto;
-	
-	
 }
 .main-section {
 	position: fixed;
@@ -90,7 +88,6 @@ main {
 	transition: 0.3s;
 }
 .main-section__submit {
-
 	font-family: 'Roboto', sans-serif;
 	appearance: none;
    border: 0;
@@ -133,6 +130,13 @@ main {
 	left: 320px;
 	max-width: 1080px;
 }
+*[id]:before {
+	display: block;
+	content: " ";
+	margin-top: -175px;
+	height: 175px;
+	visibility: hidden;
+}
 .main-directory__wrapper {
 	position: absolute;
 	top: 0px;
@@ -142,12 +146,11 @@ main {
 	padding-bottom: 280px;
 }
 .main-directory__data {
-	position: sticky;
-	top: 210px;
 	background-color: #fff;
 }
-
 .main-directory__subtitle {
+	position: sticky;
+	top: 205px;
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	background-color: rgb(75, 24, 218);
