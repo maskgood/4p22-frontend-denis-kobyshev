@@ -1,0 +1,320 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+html {
+  background-color: #1B2473;
+}
+
+.main {
+  font-family: "Roboto", sans-serif;
+  margin: 0 20px;
+}
+.main-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.main-form__wrapper {
+  max-width: 600px;
+  margin: 82px auto;
+  padding: 26px 45px;
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .main-form__wrapper {
+    max-width: 728px;
+    margin: 20px auto;
+  }
+}
+
+.form {
+  text-align: center;
+}
+.form__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  margin-bottom: 36px;
+  color: #787878;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .form__title {
+    font-size: 60px;
+    margin-bottom: 37px;
+  }
+}
+.form__button {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 51px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #1A226B;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.form__button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .form__button {
+    font-size: 32px;
+    padding: 32px 64px;
+    margin-bottom: 240px;
+  }
+}
+@media screen and (max-width: 511px) and (min-width: 320px) {
+  .form__button {
+    font-size: 24px;
+    padding: 24px 48px;
+    margin-bottom: calc(10px + 31.25vw);
+  }
+}
+
+.form-input__email-wrapper {
+  margin-bottom: 32px;
+  position: relative;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .form-input__email-wrapper {
+    margin-bottom: 34px;
+  }
+}
+.form-input__email, .form-input__pass {
+  width: 100%;
+  height: 49px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #787878;
+  border: 2px solid #787878;
+  border-radius: 10px;
+  padding-left: 15px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+@media screen and (max-width: 511px) and (min-width: 320px) {
+  .form-input__email, .form-input__pass {
+    padding-left: 8px;
+    font-size: 20px;
+  }
+}
+.form-input__email:focus, .form-input__pass:focus {
+  -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.form-input__email::-webkit-input-placeholder, .form-input__pass::-webkit-input-placeholder {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ccc;
+}
+.form-input__email::-moz-placeholder, .form-input__pass::-moz-placeholder {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ccc;
+}
+.form-input__email:-ms-input-placeholder, .form-input__pass:-ms-input-placeholder {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ccc;
+}
+.form-input__email::-ms-input-placeholder, .form-input__pass::-ms-input-placeholder {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ccc;
+}
+.form-input__email::placeholder, .form-input__pass::placeholder {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ccc;
+}
+@media screen and (max-width: 511px) and (min-width: 320px) {
+  .form-input__email::-webkit-input-placeholder, .form-input__pass::-webkit-input-placeholder {
+    padding-left: 0px;
+    font-size: 20px;
+  }
+  .form-input__email::-moz-placeholder, .form-input__pass::-moz-placeholder {
+    padding-left: 0px;
+    font-size: 20px;
+  }
+  .form-input__email:-ms-input-placeholder, .form-input__pass:-ms-input-placeholder {
+    padding-left: 0px;
+    font-size: 20px;
+  }
+  .form-input__email::-ms-input-placeholder, .form-input__pass::-ms-input-placeholder {
+    padding-left: 0px;
+    font-size: 20px;
+  }
+  .form-input__email::placeholder, .form-input__pass::placeholder {
+    padding-left: 0px;
+    font-size: 20px;
+  }
+}
+.form-input__email:focus::-webkit-input-placeholder, .form-input__pass:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.form-input__email:focus::-moz-placeholder, .form-input__pass:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+.form-input__email:focus:-ms-input-placeholder, .form-input__pass:focus:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.form-input__email:focus::-ms-input-placeholder, .form-input__pass:focus::-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.form-input__email:focus::placeholder, .form-input__pass:focus::placeholder {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.form-input__pass-wrapper {
+  margin-bottom: 16px;
+  position: relative;
+}
+.form-input__check-wrapper {
+  -moz-text-align-last: left;
+       text-align-last: left;
+  margin-bottom: 52px;
+}
+@media screen and (max-width: 511px) and (min-width: 320px) {
+  .form-input__check-wrapper {
+    max-width: 90%;
+    margin: 0 auto 20px auto;
+  }
+}
+.form-input__checkbox {
+  position: relative;
+  visibility: hidden;
+}
+@media screen and (max-width: 511px) and (min-width: 320px) {
+  .form-input__checkbox {
+    margin-bottom: 10px;
+  }
+}
+.form-input__checkbox:before {
+  position: absolute;
+  content: "";
+  visibility: visible;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #787878;
+  border-radius: 7px;
+}
+.form-input__checkbox:checked::after {
+  position: absolute;
+  content: "✔";
+  bottom: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  font-size: 32px;
+  display: block;
+  visibility: visible;
+  color: #787878;
+}
+
+.form-label__email, .form-label__pass {
+  visibility: hidden;
+  position: absolute;
+  top: 7px;
+  left: 18px;
+  color: #ccc;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.form-label__check {
+  font-size: 14px;
+  color: #787878;
+  position: relative;
+  top: 6px;
+  left: 16px;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .form-label__check {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 511px) and (min-width: 320px) {
+  .form-label__check {
+    font-size: 14px;
+  }
+}
+
+.form-input__email:focus ~ .form-label__email, .form-input__email:valid ~ .form-label__email,
+.form-input__pass:focus ~ .form-label__pass, .form-input__pass:valid ~ .form-label__pass {
+  visibility: visible;
+  top: -20px;
+  left: 8px;
+  font-size: 14px;
+  color: #787878;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .form-input__email:focus ~ .form-label__email, .form-input__email:valid ~ .form-label__email,
+.form-input__pass:focus ~ .form-label__pass, .form-input__pass:valid ~ .form-label__pass {
+    font-size: 24px;
+    top: -32px;
+  }
+}
+@media screen and (max-width: 511px) and (min-width: 320px) {
+  .form-input__email:focus ~ .form-label__email, .form-input__email:valid ~ .form-label__email,
+.form-input__pass:focus ~ .form-label__pass, .form-input__pass:valid ~ .form-label__pass {
+    font-size: 20px;
+    top: -28px;
+  }
+}
