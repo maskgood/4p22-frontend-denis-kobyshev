@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<title>Регистрация</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header__wrapper-left">
+			<div class="header__logo">
+				<img src="img/logo.png" alt="Университет Иннополис" class="header__logo-img">
+			</div>
+			<h1 class="header__title">PCS Frontend</h1>
+		</div>
+		<div class="header__wrapper-right">
+			<a class="header__link" href="registration.html">
+				<h2 class="header__subtitle active">Регистрация</h2>
+			</a>
+			<a class="header__link" href="index.html">
+				<h2 class="header__subtitle">Вход</h2>
+			</a>
+		</div>
+	</header>
+
+	<main class="registration">
+		<div class="registration__wrapper">
+			<h2 class="registration__title">Регистрация</h2>
+			<form action="#" class="registration__form">
+				<div class="registration__form-input-wrapper">
+					<label for="email" class="registration__form-label">Email</label>
+					<input id="email" type="email" name="email" placeholder="Введите Email" class="registration__form-input">
+				</div>
+				<div class="registration__form-input-wrapper">
+					<label for="password" class="registration__form-label">Пароль</label>
+					<input id="password" type="password" name="password" placeholder="Введите пароль"
+						class="registration__form-input">
+				</div>
+				<div class="registration__form-input-wrapper">
+					<label for="repassword" class="registration__form-label">Подтверждение пароля</label>
+					<input id="repassword" type="password" name="password" placeholder="Подтвердите пароль"
+						class="registration__form-input">
+				</div>
+				<div class="registration__form-radio-wrapper">
+					<span class="registration__form-radio-span">Пол</span>
+					<div class="registration__form-gender-wrapper">
+						<input type="radio" name="gender" id="radio-1" value="man" class="registration__form-radio" checked>
+						<div class="registration__form-radio-element"></div>
+						<label for="radio-1" class="registration__form-radio-label">Мужчина</label>
+					</div>
+					<div class="registration__form-gender-wrapper">
+						<input type="radio" name="gender" id="radio-2" value="woman" class="registration__form-radio">
+						<div class="registration__form-radio-element"></div>
+						<label for="radio-2" class="registration__form-radio-label">Женщина</label>
+					</div>
+				</div>
+				<div class="registration__form-textarea-wrapper">
+					<label for="textarea" class="registration__form-textarea-label">О себе</label>
+					<textarea name="textarea" id="textarea" rows="10" placeholder="Расскажите о себе..."
+						class="registration__form-textarea"></textarea>
+				</div>
+				<div class="registration__form-checkbox-wrapper">
+					<input type="checkbox" name="checkbox" id="update" class="registration__form-checkbox">
+					<div class="registration__form-checkbox-element"></div>
+					<label for="update" class="registration__form-checkbox-label">Я согласен получать обновления на
+						почту</label>
+				</div>
+				<input type="submit" value="Регистрация" class="registration__form-btn">
+			</form>
+		</div>
+	</main>
+</body>
+
+</html>
