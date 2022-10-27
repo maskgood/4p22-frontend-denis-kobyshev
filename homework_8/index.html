@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<title>Калькулятор - ДЗ №8</title>
+</head>
+
+<body>
+	<div class="container">
+		<main class="main">
+			<form action="" class="main__form">
+				<div class="main__form-item">
+					<label for="number1" class="main__form-label">Первое число</label>
+					<input id="number1" type="text" class="main__form-input" placeholder="Число 1">
+				</div>
+				<div class="main__form-item">
+					<label for="operator" class="main__form-label">Операция</label>
+					<input id="operator" type="text" class="main__form-input" placeholder="( + , - , * , / )">
+				</div>
+				<div class="main__form-item">
+					<label for="number2" class="main__form-label">Второе число</label>
+					<input id="number2" type="text" class="main__form-input" placeholder="Число 2">
+				</div>
+				<div class="main__form-item">
+					<button id="submit" class="main__form-btn">Рассчитать</button>
+				</div>
+				<div class="main__form-item">
+					<span class="main__form-span">Результат</span>
+					<div id="result" class="main__form-result"></div>
+				</div>
+				<div class="main__form-item">
+					<button id="reset" type="reset" class="main__form-btn reset-btn">Очистить</button>
+				</div>
+			</form>
+		</main>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
