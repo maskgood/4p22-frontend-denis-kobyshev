@@ -37,7 +37,7 @@ button.addEventListener('click', (event) => {
 		default: return divResult.innerText = 'Данная операция не поддерживается';
 	}
 
-	if (result === Infinity) {
+	if (result === Infinity || result === -Infinity) {
 		console.log('На ноль делить нельзя!');
 		return divResult.innerText = 'На ноль делить нельзя!';
 	};
