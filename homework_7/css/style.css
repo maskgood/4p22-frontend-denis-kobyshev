@@ -243,11 +243,6 @@ body {
     height: calc(20px + 4 * (100vw - 320px) / 447);
   }
 }
-@media screen and (max-width: 400px) {
-  .form-input__checkbox:before {
-    left: 112px;
-  }
-}
 .form-input__checkbox:checked::after {
   position: absolute;
   content: "✔";
@@ -262,7 +257,6 @@ body {
 }
 @media screen and (max-width: 400px) {
   .form-input__checkbox:checked::after {
-    left: 114px;
     bottom: 5px;
   }
 }
@@ -287,9 +281,10 @@ body {
 }
 @media screen and (max-width: 768px) and (min-width: 320px) {
   .form-label__check {
-    font-size: calc(10px + 4 * (100vw - 320px) / 447);
+    font-size: calc(8px + 6 * (100vw - 320px) / 447);
   }
 }
+
 .form-input__email:focus ~ .form-label__email, .form-input__email:valid ~ .form-label__email,
 .form-input__pass:focus ~ .form-label__pass, .form-input__pass:valid ~ .form-label__pass {
   visibility: visible;
