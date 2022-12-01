@@ -1,0 +1,71 @@
+.item{
+	width: 250px;
+	margin-bottom: 50px;
+	background-color: #f5f5f5;
+	overflow: hidden;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.item:hover{
+	cursor: pointer;
+}
+.item__img-wrapper{
+flex: 0 0 auto;
+}
+
+.item__img{
+	width: 100%;
+	height: calc(250px + 50 * (100vw - 375px) / 1120);
+	object-fit: cover;
+	transition: transform 400ms ease;
+}
+.item__img:hover{
+	transform: scale(1.05);
+}
+.item__description-wrapper{
+	flex: 1 0 auto;
+}
+.item__title{
+	font-weight: 400;
+	font-size: 14px;
+	margin: 10px 20px;
+}
+.item__description{
+	
+}
+.item__price{
+	font-weight: 600;
+	font-size: 16px;
+	margin: 20px 20px;
+	color: #333;
+}
+.item__price:after{
+	content: '₽';
+	margin-left: 5px;
+}
+.item__add-wrapper{
+	flex: 0 0 auto;
+}
+.item__cart-icon{
+	position: relative;
+	top: 3px;
+	font-size: 20px;
+	margin-right: 5px;
+}
+.item__add-to-cart{
+	background-color: #ca5252;
+	width: 80%;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 600;
+	transition: 200ms ease;
+	margin: 0 auto;
+}
+.item__add-to-cart:hover{
+	background-color: #e75e5e;
+}
