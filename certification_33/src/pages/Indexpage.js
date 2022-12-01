@@ -4,11 +4,6 @@ import Footer from "../components/footer/Footer";
 import Items from "../components/items/Items";
 import FullCard from "../components/fullcard/FullCard";
 import { Routes, Route, Link } from 'react-router-dom'
-// import { Indexpage } from './pages/Indexpage';
-// import { Aboutpage } from './pages/Aboutpage';
-// import { Contactspage } from './pages/Contactspage';
-// import { Lkpage } from './pages/Lkpage';
-// import Categories from "./components/categories/Categories";
 
 
 class Indexpage extends React.Component {
@@ -23,11 +18,9 @@ class Indexpage extends React.Component {
 			fullItem: {}
 
 		}
-		// this.state.currentItems = this.state.items
-		// this.state.cat = this.state.arr_2
+
 		this.addToOrder = this.addToOrder.bind(this)
 		this.deleteOrder = this.deleteOrder.bind(this)
-		// this.choseCategory = this.choseCategory.bind(this)
 		this.onShowItem = this.onShowItem.bind(this)
 	}
 
@@ -75,13 +68,9 @@ class Indexpage extends React.Component {
 					</select>
 
 					<input className="search__input" id="search" type="text" name="search" placeholder="Я ищу..." />
-
-
 				</div>
 
-
 				<Items onShowItem={this.onShowItem} items={this.state.items} onAdd={this.addToOrder} />
-
 
 				{this.state.showFullItem && <FullCard onAdd={this.addToOrder} onShowItem={this.onShowItem} item={this.state.fullItem} />}
 
@@ -119,8 +108,6 @@ class Indexpage extends React.Component {
 		if (!isInArray)
 			this.setState({ orders: [...this.state.orders, item] })
 	}
-
-
 
 
 }
