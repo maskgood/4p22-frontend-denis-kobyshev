@@ -11,7 +11,6 @@ class Indexpage extends React.Component {
 		super(props)
 		this.state = {
 			orders: [],
-			// currentItems: [],
 			items: [],
 			// cat: [],
 			showFullItem: false,
@@ -34,13 +33,10 @@ class Indexpage extends React.Component {
 					});
 				}
 			)
-
 	}
 
-
-
-
 	render() {
+
 		let newArr = this.state.items.map((item) => ({ name: item.category }));
 		let arr_2 = Array.from(new Set(newArr.map((item) => item.name)));
 		arr_2.unshift('all');
@@ -48,12 +44,6 @@ class Indexpage extends React.Component {
 
 		return (
 			<div className="wrapper" >
-				{/* <Routes>
-					<Route path="/" element={<Indexpage />} />
-					<Route path="/about" element={<Aboutpage />} />
-					<Route path="/contacts" element={<Contactspage />} />
-					<Route path="/lk" element={<Lkpage />} />
-				</Routes> */}
 
 				<Header orders={this.state.orders} onDelete={this.deleteOrder} />
 
@@ -108,7 +98,5 @@ class Indexpage extends React.Component {
 		if (!isInArray)
 			this.setState({ orders: [...this.state.orders, item] })
 	}
-
-
 }
 export { Indexpage };
