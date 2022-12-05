@@ -1,0 +1,189 @@
+.lk__wrapper{
+	display: flex;
+	flex-direction: column;
+}
+.lk__header{
+	flex: 0 0 auto;
+}
+.lk__content{
+	flex: 1 0 auto;
+}
+.lk__footer{
+	flex: 0 0 auto;
+}
+
+
+.lk-main {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.lk-main__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+	padding: 25px 45px 37px 45px;
+	max-width: 600px;
+	width: 100%;
+	margin: 0 20px;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+	.lk-main__wrapper {
+	  padding: calc(15px + 10 * (100vw - 320px) / 448) calc(15px + 30 * (100vw - 320px) / 448) calc(30px + 7 * (100vw - 320px) / 448) calc(15px + 30 * (100vw - 320px) / 448);
+	}
+}
+.lk-main__title {
+	font-weight: 700;
+	font-size: 50px;
+	text-align: center;
+	color: #787878;
+	margin-bottom: 35px;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+	.lk-main__title {
+	  font-size: calc(35px + 15 * (100vw - 320px) / 448);
+	}
+}
+.lk-main__form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.lk-main__form-input-wrapper {
+	position: relative;
+	margin-bottom: 32px;
+}
+.lk-main__form-label {
+	position: absolute;
+	bottom: 54px;
+	left: 8px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #787878;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+	.lk-main__form-label {
+	  font-size: calc(12px + 4 * (100vw - 320px) / 448);
+	  bottom: calc(46px + 8 * (100vw - 320px) / 448);
+	  left: calc(5px + 3 * (100vw - 320px) / 448);
+	}
+}
+.lk-main__form-input {
+	width: 100%;
+	color: #787878;
+	font-size: 28px;
+	font-weight: 700;
+	border: 2px solid #787878;
+	padding: 6px 15px;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+	.lk-main__form-input {
+	  font-size: calc(22px + 6 * (100vw - 320px) / 448);
+	  padding: 6px calc(8px + 7 * (100vw - 320px) / 448);
+	}
+}
+
+.lk-main__form-input::-moz-placeholder {
+	color: #CCCCCC;
+}
+.lk-main__form-input:-ms-input-placeholder {
+	color: #CCCCCC;
+}
+.lk-main__form-input::placeholder {
+	color: #CCCCCC;
+}
+.lk-main__form-input:focus::-moz-placeholder {
+	opacity: 0;
+	-moz-transition: 0.3s;
+	transition: 0.3s;
+}
+.lk-main__form-input:focus:-ms-input-placeholder {
+	opacity: 0;
+	-ms-transition: 0.3s;
+	transition: 0.3s;
+}
+.lk-main__form-input:focus::placeholder {
+	opacity: 0;
+	transition: 0.3s;
+}
+.lk-main__form-btn {
+	align-self: center;
+	background-color: #ca5252;
+	max-width: 180px;
+	line-height: 14px;
+	font-size: 24px;
+	font-weight: 700;
+	padding: 14px 56px;
+	color: #FFFFFF;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	transition: 200ms ease;
+}
+@media screen and (max-width: 768px) and (min-width: 320px) {
+	.lk-main__form-btn {
+	  margin-top: calc(10px + 10 * (100vw - 320px) / 448);
+	}
+}
+.lk-main__form-btn:hover, .lk-main__form-btn.contact:hover {
+	cursor: pointer;
+	background-color: #e75e5e;
+}
+.lk-main__registration{
+	margin-top: 25px;
+	font-size: 18px;
+	font-weight: 600;
+}
+.lk-main__registration-link{
+	text-decoration: none;
+	color: #ca5252;
+	transition: 200ms ease;
+}
+.lk-main__registration-link:hover{
+	color: #e75e5e;
+}
+@media screen and (max-width: 375px) and (min-width: 320px) {
+	.lk-main__registration {
+		font-size: 16px;
+	}
+}
+.lk-main__form-input_error{
+	position: absolute;
+	bottom: 54px;
+	right: 8px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+   font-weight: 700;
+   color: #EE2424;
+}
+@media screen and (max-width: 767px) and (min-width: 320px) {
+	.lk-main__form-input_error {
+		right: calc(0px + 3 * (100vw - 320px) / 448);
+		font-size: calc(10px + 6 * (100vw - 320px) / 448);
+		bottom: calc(38px + 16 * (100vw - 320px) / 448);
+	}
+	.lk-main__form-input_error {
+		font-size: calc(10px + 6 * (100vw - 320px) / 448);
+		bottom: calc(48px + 10 * (100vw - 320px) / 448);
+	}
+	}
+	.lk-main__form-input_error.textarea{
+		position: absolute;
+		top: -4px;
+		right: 0px;
+	}
+	.lk-main__form-btn.contact {
+		align-self: center;
+		background-color: #ca5252;
+		max-width: 200px;
+		line-height: 14px;
+		font-size: 24px;
+		font-weight: 700;
+		padding: 14px 26px;
+		color: #FFFFFF;
+		border: 2px solid transparent;
+		border-radius: 5px;
+		transition: 200ms ease;
+	}

@@ -1,0 +1,187 @@
+.header{
+}
+.header__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 8px;
+
+}
+@media screen and (max-width: 420px) and (min-width: 320px) {
+	.header__container{
+		flex-direction: column;		
+	}
+}
+.header__logo{
+	font-weight: 600;
+	font-size: calc(17px + 3 * (100vw - 375px) / 1120);
+}
+@media screen and (max-width: 420px) and (min-width: 320px) {
+	.header__logo{
+		margin-bottom: 10px;	
+	}
+}
+.header__cart-icon{
+	font-size: 18px;
+	cursor: pointer;
+	transition: color, transform 200ms ease;
+}
+.header__cart-icon:hover,
+.header__cart-icon.active{
+	color: #ca5252;
+	transform: scale(1.3);
+}
+.header__shop-cart{
+	position: absolute;
+	top: calc(55px - 25 * (100vw - 375px) / 1120);
+	right: 0;
+	width: 450px;
+	background-color: rgba(247, 247, 247, 0.95);
+	box-shadow: 4px 5px 15px -7px #606060;
+	z-index: 1000;
+	padding: 10px;
+	padding-bottom: 0;
+}
+@media screen and (min-width: 1440px){
+	.header__shop-cart{
+		top: 30px;
+	}
+}
+@media screen and (max-width: 450px) and (min-width: 375px) {
+	.header__shop-cart{
+		width: 375px;
+	}
+}
+@media screen and (max-width: 374px) and (min-width: 320px) {
+	.header__shop-cart{
+		width: 320px;
+	}
+}
+.header__nav{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	list-style: none;
+}
+.header__nav-link{
+	cursor: pointer;
+	transition: opacity 500ms ease;
+	font-size: calc(14px + 2 * (100vw - 375px) / 1120);
+	font-weight: 600;
+}
+.header__nav-link a{
+	color: #606060;
+	text-decoration: none;
+}
+.header__nav-link:hover{
+	opacity: 0.5;
+}
+
+.header__advert{
+	margin: 50px 0;
+	background: url('../../img/shop-logo.jpg') no-repeat;
+	width: 100%;
+	height: calc(220px + 80 * (100vw - 375px) / 1120);
+	background-size: cover;
+	background-position: center top;
+	background-blend-mode: multiply;
+	background-color: #999898;
+	position: relative;
+}
+.header__advert:after{
+	content: 'Черная пятница';
+	position: absolute;
+	top: calc(80px + 20 * (100vw - 375px) / 1120);
+	left: calc(10px + 40 * (100vw - 375px) / 1120);
+	font-size: calc(30px + 10 * (100vw - 375px) / 1120);
+	font-weight: 600;
+	color: #fff;
+}
+.header__advert:before{
+	content: 'большая осенняя распродажа';
+	position: absolute;
+	top: calc(120px + 30 * (100vw - 375px) / 1120);
+	left: calc(15px + 35 * (100vw - 375px) / 1120);
+	font-size: calc(15px + 10 * (100vw - 375px) / 1120);
+	font-weight: 400;
+	color: #fff;
+}
+@media (max-width: 649px) {
+	.header__advert{
+		margin: 50px 0 20px 0;
+	}
+}
+@media screen and (max-width: 420px) and (min-width: 320px) {
+	.header__advert{
+		margin: 25px 0 20px 0;
+	}
+}
+.empty{
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.header__total{
+	display: flex;
+	justify-content: space-between;
+}
+.header__summ{
+	display: inline-block;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 35px;
+	text-align: left;
+	margin-left: 14px;
+}
+
+.header__order-btn{
+	display: inline-block;
+	font-weight: 600;
+	font-size: 20px;
+	float: right;
+	margin-right: 14px;
+	margin-bottom: 10px;
+	background-color: #ca5252;
+	color: #fff;
+	height: 35px;
+	width: 150px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 5px;
+	transition: 200ms ease;
+}
+.header__order-btn:hover{
+	cursor: pointer;
+	background-color: #e75e5e
+}
+@media screen and (max-width: 374px) and (min-width: 320px) {
+	.header__order-btn{
+		font-size: 18px;
+		line-height: 30px;
+		height: 30px;
+		width: 120px;
+		margin-right: 8px;
+	}
+	.header__summ{
+		font-size: 18px;
+		line-height: 35px;
+		text-align: left;
+		margin-left: 8px;
+	}
+}
+.shopping-cart{
+	position: relative;
+}
+.shopping-cart-count{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background-color: rgba(255, 0, 0, 0.473);
+	border-radius: 50%;
+	left: 15px;
+	bottom: 18px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 20px;
+}
