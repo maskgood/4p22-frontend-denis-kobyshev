@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/4p22-frontend-denis-kobyshev/static/css/main.6bb82614.css",
+    "main.js": "/4p22-frontend-denis-kobyshev/static/js/main.8b7a0ad0.js",
+    "static/media/shop-logo.jpg": "/4p22-frontend-denis-kobyshev/static/media/shop-logo.98f877518cde0396bcb1.jpg",
+    "index.html": "/4p22-frontend-denis-kobyshev/index.html",
+    "main.6bb82614.css.map": "/4p22-frontend-denis-kobyshev/static/css/main.6bb82614.css.map",
+    "main.8b7a0ad0.js.map": "/4p22-frontend-denis-kobyshev/static/js/main.8b7a0ad0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6bb82614.css",
+    "static/js/main.8b7a0ad0.js"
+  ]
+}
