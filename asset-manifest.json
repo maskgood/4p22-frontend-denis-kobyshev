@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/4p22-frontend-denis-kobyshev/static/css/main.6bb82614.css",
-    "main.js": "/4p22-frontend-denis-kobyshev/static/js/main.8b7a0ad0.js",
-    "static/media/shop-logo.jpg": "/4p22-frontend-denis-kobyshev/static/media/shop-logo.98f877518cde0396bcb1.jpg",
-    "index.html": "/4p22-frontend-denis-kobyshev/index.html",
-    "main.6bb82614.css.map": "/4p22-frontend-denis-kobyshev/static/css/main.6bb82614.css.map",
-    "main.8b7a0ad0.js.map": "/4p22-frontend-denis-kobyshev/static/js/main.8b7a0ad0.js.map"
+    "main.css": "/certification_3/static/css/main.193f2068.css",
+    "main.js": "/certification_3/static/js/main.8b7a0ad0.js",
+    "static/media/shop-logo.jpg": "/certification_3/static/media/shop-logo.98f877518cde0396bcb1.jpg",
+    "index.html": "/certification_3/index.html",
+    "main.193f2068.css.map": "/certification_3/static/css/main.193f2068.css.map",
+    "main.8b7a0ad0.js.map": "/certification_3/static/js/main.8b7a0ad0.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bb82614.css",
+    "static/css/main.193f2068.css",
     "static/js/main.8b7a0ad0.js"
   ]
 }
